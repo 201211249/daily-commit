@@ -47,5 +47,7 @@ string solution(vector<string> survey, vector<int> choices) {
 
 int main() {
     cout << solution({ "AN", "CF", "MJ", "RT", "NA" }, { 5, 3, 2, 7, 5 }) << endl;
+    cout << solution({"TR", "RT", "TR"}, {7, 1, 3}) << endl;
+    cout << "¹Ùº¸" << endl;
     return 0;
 }
