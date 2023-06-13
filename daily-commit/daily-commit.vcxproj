@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="20230613.cpp" />
     <ClCompile Include="first.cpp" />
     <ClCompile Include="second.cpp" />
   </ItemGroup>
