@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="split.cpp">
+    <ClCompile Include="중복제거.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
