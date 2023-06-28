@@ -9,17 +9,19 @@ using namespace std;
 vector<int> v;
 
 void printV(vector<int>& V) {
-	for (int i = 0; i < V.size()-1; i++) {
+	for (int i = 0; i < V.size(); i++) {
 		cout << V[i] << " ";
 	}
 	cout << endl;
 }
 
 void makePermutation(int n, int r, int depth) {
-	cout << n << " : " << r << " : " << depth << endl;
+	//cout << n << " : " << r << " : " << depth << endl;
 	if (r == depth) {
 		// logic
-		printV(v);
+		for (int i = 0; i < r; i++)cout << v[i];
+		cout << endl;
+		//printV(v);
 		return;
 	}
 	for (int i = depth; i < n; i++) {
@@ -36,7 +38,7 @@ int main() {
 	int a[3] = { 1, 2, 3 };
 	
 	for (int i = 0; i < 3; i++)v.push_back(a[i]);
-	makePermutation(3, 3, 0);
+	makePermutation(3, 1, 0);
 	cout << "=======================" << endl;
 	v.clear();
 	for (int i = 2; i >= 0; i--)v.push_back(a[i]);

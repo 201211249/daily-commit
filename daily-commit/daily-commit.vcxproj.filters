@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="순열과조합.cpp">
+    <ClCompile Include="조합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
