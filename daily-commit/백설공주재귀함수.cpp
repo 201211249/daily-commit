@@ -6,13 +6,14 @@ int sum;
 int n = 9, r = 7;
 void solve() {
 	 sum = 0;
-	 for (int i = 0; i < 7; i++) {
+	 for (int i = 0; i < r; i++) {
 		 sum += a[i];
 	 }
 	 if (sum == 100) {
 		 sort(a, a + 7);
-		 for (int i = 0; i < 7; i++)cout << a[i] << endl;
+		 for (int i = 0; i < r; i++)cout << a[i] << endl;
 		 exit(0);
+		 //return;
 	 }
 }
 void printA() {
