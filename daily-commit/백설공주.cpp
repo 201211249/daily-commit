@@ -8,17 +8,17 @@ using namespace std;
 int a[9], sum;
 vector<int> v;
 pair<int, int> ret;
-void solve() {
-	
-	for (int i = 0; i < 9; i++) {
-		for (int j = i + 1; j < 9; j++) {
-			if (sum - a[i] - a[j] == 100) {
-				ret = { a[i],a[j]};
-				return;
-			}
-		}
-	}
-}
+//void solve() {
+//	
+//	for (int i = 0; i < 9; i++) {
+//		for (int j = i + 1; j < 9; j++) {
+//			if (sum - a[i] - a[j] == 100) {
+//				ret = { a[i],a[j]};
+//				return;
+//			}
+//		}
+//	}
+//}
 
 int main() {
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
@@ -35,7 +35,7 @@ int main() {
 		if (sum == 100)break;
 	} while (next_permutation(a, a + 9));
 	for (int i = 0; i<7; i++) cout << a[i] << endl;
-	sum = 0;
+	/*sum = 0;
 	cout << "조합으로 푼다." << endl;
 	for (int i = 0; i < 9; i++) {
 		cin >> a[i]; sum += a[i];
@@ -46,6 +46,6 @@ int main() {
 		v.push_back(i);
 	}
 	sort(v.begin(), v.end());
-	for (int i : v)cout << i << endl;
+	for (int i : v)cout << i << endl;*/
 	return 0;
 }
