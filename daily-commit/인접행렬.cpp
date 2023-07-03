@@ -7,11 +7,14 @@ int x, y, n;
 // 방문했으면 다시 방문하지 않게 만들기 재귀함수로
 bool check_a[10];
 void go(int x) {
+	if (check_a[x] == 1)return;
 	check_a[x] = 1;
-	cout << x << "\n";
+	//cout << x << "\n";
 	for (int i = 0; i < 10; i++) {
-		if (check_a[i])continue;
-		if (a[x][i])go(i);
+		if (a[x][i] && !check_a[i]) {
+			cout << i << "\n";
+			go(i);
+		}
 	}
 	return;
 }
@@ -29,9 +32,7 @@ int main() {
 	}
 	cout << "2번 답" << "\n";
 	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < 10; j++) {
-			if (a[i][j] == 1 && check_a[i] == 0)go(i);
-		}
+		go(i);
 	}
 	return 0;
 }
