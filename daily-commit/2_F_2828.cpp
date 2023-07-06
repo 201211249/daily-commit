@@ -17,8 +17,8 @@ int main() {
 				s = a;
 			}
 			else{
-				a += (a - e);
-				ret += a - e;
+				s += (a - e);
+				ret += (a - e);
 			}
 		}
 		
