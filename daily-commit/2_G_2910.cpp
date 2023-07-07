@@ -35,7 +35,7 @@ int n, a[1004], c;
 map<int, int> mp, mp_idx;
 vector<pair<int, int>> v;
 bool cmp(pair<int, int> x, pair<int, int> y) {
-	if (x.second == y.second)return mp_idx[x.first] < mp_idx[y.first];
+	if (x.first == y.first)return mp_idx[x.second] < mp_idx[y.second];
 	return x.first > y.first;
 }
 int main() {
